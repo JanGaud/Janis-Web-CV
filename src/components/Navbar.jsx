@@ -23,15 +23,19 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex">
         <li>Acceuil</li>
-        <li>Expériences</li>
+        <li>À propos</li>
         <li>Compétences</li>
-        <li>Travail</li>
+        <li>Projets</li>
         <li>Contact</li>
       </ul>
 
       {/* Hamburger menu */}
       <div onClick={handleClick} className="md:hidden z-10 text-3xl">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? (
+          <FaBars className="hover:text-[--amethyst] duration-300" />
+        ) : (
+          <FaTimes className="hover:text-[--amethyst] duration-300" />
+        )}
       </div>
 
       {/* Mobile menu */}
@@ -43,9 +47,9 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl">Acceuil</li>
-        <li className="py-6 text-4xl">Expériences</li>
+        <li className="py-6 text-4xl">À propos</li>
         <li className="py-6 text-4xl">Compétences</li>
-        <li className="py-6 text-4xl">Travail</li>
+        <li className="py-6 text-4xl">Projets</li>
         <li className="py-6 text-4xl">Contact</li>
       </ul>
 
