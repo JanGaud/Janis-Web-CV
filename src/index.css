@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Headlines 
+font-family: 'Shadows Into Light',
+cursive;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* Text 
+font-family: 'Nunito Sans',
+sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+
+/* Btn + Nav
+font-family: 'Archivo Narrow',
+sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+@layer base {
+    body {
+        @apply font-nunito;
+    }
+
+    li {
+        @apply px-4;
+        @apply font-archivo;
+        @apply cursor-pointer;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+--pumpkin: #ff6d00ff;
+--safety-orange: #ff7900ff;
+--ut-orange: #ff8500ff;
+--princeton-orange: #ff9100ff;
+--orange-peel: #ff9e00ff;
+--russian-violet: #240046ff;
+--persian-indigo: #3c096cff;
+--tekhelet: #5a189aff;
+--french-violet: #7b2cbfff;
+--amethyst: #9d4eddff;
 }
+
