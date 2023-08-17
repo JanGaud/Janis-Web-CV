@@ -1,4 +1,12 @@
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/JGLogo.png";
 import { useState } from "react";
 
@@ -7,7 +15,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[--russian-violet] text-gray-300">
+    <section className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[--russian-violet] text-gray-300">
       <div>
         <img src={Logo} alt="JG Logo" style={{ width: 70 }} />
       </div>
@@ -42,8 +50,51 @@ const Navbar = () => {
       </ul>
 
       {/* Social Icons */}
-      <div className="hidden"></div>
-    </div>
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+        <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#ff9e00]">
+            <a
+              className="flex justify-between items-center w-full text-gray-50"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2]">
+            <a
+              className="flex justify-between items-center w-full text-gray-50"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#24292e]">
+            <a
+              className="flex justify-between items-center w-full text-gray-50"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#d44638]">
+            <a
+              className="flex justify-between items-center w-full text-gray-50"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Courriel <HiOutlineMail size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 };
 

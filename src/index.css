@@ -32,18 +32,21 @@ sans-serif;
         @apply font-archivo;
         @apply cursor-pointer;
     }
+    h1 {
+        @apply font-shadow;
+    }
 }
 
 :root{
---pumpkin: #ff6d00ff;
---safety-orange: #ff7900ff;
---ut-orange: #ff8500ff;
---princeton-orange: #ff9100ff;
---orange-peel: #ff9e00ff;
---russian-violet: #240046ff;
---persian-indigo: #3c096cff;
---tekhelet: #5a189aff;
---french-violet: #7b2cbfff;
---amethyst: #9d4eddff;
+--pumpkin: #ff6d00;
+--safety-orange: #ff7900;
+--ut-orange: #ff8500;
+--princeton-orange: #ff9100;
+--orange-peel: #ff9e00;
+--russian-violet: #240046;
+--persian-indigo: #3c096c;
+--tekhelet: #5a189a;
+--french-violet: #7b2cbf;
+--amethyst: #9d4edd;
 }
 
