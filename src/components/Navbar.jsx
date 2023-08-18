@@ -4,11 +4,14 @@ import {
   FaGithub,
   FaLinkedin,
   FaFacebook,
-} from "react-icons/fa";
+} 
+from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/JGLogo.png";
 import { useState } from "react";
+import { Link } from "react-scroll";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -22,11 +25,33 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li>Acceuil</li>
-        <li>À propos</li>
-        <li>Compétences</li>
-        <li>Projets</li>
-        <li>Contact</li>
+        <li>
+          <Link activeClass="active" to="home" smooth={true} duration={500}>
+            Acceuil
+          </Link>
+        </li>
+        <li>
+          <li>
+            <Link activeClass="active" to="about" smooth={true} duration={500}>
+              À propos
+            </Link>
+          </li>
+        </li>
+        <li>
+          <Link activeClass="active" to="skills" smooth={true} duration={500}>
+            Compétences
+          </Link>
+        </li>
+        <li>
+          <Link activeClass="active" to="work" smooth={true} duration={500}>
+            Projets
+          </Link>
+        </li>
+        <li>
+          <Link activeClass="active" to="contact" smooth={true} duration={500}>
+            Contacte
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger menu */}
@@ -46,11 +71,61 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[--russian-violet] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">Acceuil</li>
-        <li className="py-6 text-4xl">À propos</li>
-        <li className="py-6 text-4xl">Compétences</li>
-        <li className="py-6 text-4xl">Projets</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="home"
+            smooth={true}
+            duration={500}
+          >
+            Acceuil
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="about"
+            smooth={true}
+            duration={500}
+          >
+            À propos
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="skills"
+            smooth={true}
+            duration={500}
+          >
+            Compétences
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="work"
+            smooth={true}
+            duration={500}
+          >
+            Projets
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleClick}
+            activeClass="active"
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
+            Contacte
+          </Link>
+        </li>
       </ul>
 
       {/* Social Icons */}

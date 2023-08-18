@@ -11,7 +11,7 @@ import MYSQL from "../assets/mysql.png";
 const Skills = () => {
   return (
     <section
-      name="Skills"
+      name="skills"
       className="w-full h-screen bg-[--russian-violet] text-[#e7e7e7]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">

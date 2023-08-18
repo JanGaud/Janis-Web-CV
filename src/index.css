@@ -32,6 +32,10 @@ sans-serif;
         @apply font-archivo;
         @apply cursor-pointer;
     }
+    li:hover {
+        @apply text-[--amethyst]; 
+        @apply duration-300;
+    }
     h1 {
         @apply font-shadow;
     }
@@ -50,3 +54,16 @@ sans-serif;
 --amethyst: #9d4edd;
 }
 
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+ .content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 207, 112, 0.8),
+        hsla(266, 71%, 53%, 0.8)
+    )!important;
+ }

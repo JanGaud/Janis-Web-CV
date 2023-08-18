@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-scroll";
+
 
 const Home = () => {
   return (
@@ -21,7 +23,14 @@ const Home = () => {
         </p>
         <div>
           <button className="text-gray-300 border-2 p-3 my-2 hover:border-[--amethyst] duration-300">
-            Voir mes Travaux
+            <Link
+              activeClass="active"
+              to="work"
+              smooth={true}
+              duration={500}
+            >
+              Voir mes projets
+            </Link>
           </button>
         </div>
       </div>
