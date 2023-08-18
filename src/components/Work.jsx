@@ -4,10 +4,7 @@ import WorkImg from "../assets/projects/workImg.jpeg";
 
 const Work = () => {
   return (
-    <section
-      name="work"
-      className="ghostFx w-full md:h-screen text-[#e7e7e7]"
-    >
+    <section name="work" className="ghostFx w-full md:h-screen text-[#e7e7e7]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <h1 className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
@@ -22,7 +19,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -40,7 +37,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -58,7 +55,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -76,7 +73,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -94,7 +91,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -112,7 +109,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${WorkImg})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">

@@ -1,16 +1,11 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-scroll";
-
-
 
 const Home = () => {
   return (
-    <section
-      name="home"
-      className="ghostFx w-full h-screen"
-    >
-      {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+    <section name="home" className="ghostFx pt-40 pb-32 relative h-screen parallax">
+      {/* Content */}
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full relative">
         <p className="text-[--orange-peel]">Bonjour, mon nom est</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#e7e7e7]">
           Janis Gaudreault
@@ -35,6 +30,6 @@ const Home = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Home
+export default Home;

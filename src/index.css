@@ -55,6 +55,16 @@ sans-serif;
 --amethyst: #9d4edd;
 }
 
+/* Effet de parralax */
+
+.parallax {
+    background-image: url("./assets/parralaxImg.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Cartes de projets */
 .content-div {
