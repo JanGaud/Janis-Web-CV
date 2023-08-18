@@ -9,9 +9,15 @@ from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/JGLogo.png";
+import CV from "../assets/cv/CV-Janis-Gaudreault.pdf";
 import { useState } from "react";
 import { Link } from "react-scroll";
+import TypingAnimation from "../script/TypeAnimation";
 
+const elements = [
+  { toRotate: '["Développeuse Web", "Programmeuse Full-Stack"]', period: "4000" },
+  // ... add more as needed
+];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -19,9 +25,10 @@ const Navbar = () => {
 
   return (
     <section className="z-10 fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300">
-      <div>
-        <img src={Logo} alt="JG Logo" style={{ width: 70 }} />
-      </div>
+        <div className="flex items-center">
+          <img src={Logo} alt="JG Logo" className="w-16 mr-5" />
+          <TypingAnimation elements={elements} />
+        </div>
 
       {/* menu */}
       <ul className="hidden md:flex">
@@ -134,7 +141,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#ff9e00]">
             <a
               className="flex justify-between items-center w-full text-gray-50"
-              href="..\CV-Janis-Gaudreault.pdf"
+              href={CV}
               target="_blank"
               rel="noopener noreferrer"
               download

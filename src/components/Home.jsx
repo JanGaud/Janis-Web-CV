@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       name="home"
-      className="ghostFx pt-40 pb-32 relative min-h-screen parallax"
+      className="ghostFx pt-40 pb-32 w-full relative min-h-screen parallax"
     >
       {/* Content */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full relative">
