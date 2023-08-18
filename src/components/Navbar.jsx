@@ -18,7 +18,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <section className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[--russian-violet] text-gray-300">
+    <section className="z-10 fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300">
       <div>
         <img src={Logo} alt="JG Logo" style={{ width: 70 }} />
       </div>
@@ -134,9 +134,10 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#ff9e00]">
             <a
               className="flex justify-between items-center w-full text-gray-50"
-              href="#"
+              href="..\CV-Janis-Gaudreault.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              download
             >
               CV <BsFillPersonLinesFill size={30} />
             </a>
@@ -144,7 +145,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2]">
             <a
               className="flex justify-between items-center w-full text-gray-50"
-              href="#"
+              href="https://www.linkedin.com/in/janis-gaudreault-227594209/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -154,7 +155,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#24292e]">
             <a
               className="flex justify-between items-center w-full text-gray-50"
-              href="#"
+              href="https://github.com/JanGaud"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -164,7 +165,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#d44638]">
             <a
               className="flex justify-between items-center w-full text-gray-50"
-              href="#"
+              href="mailto:JanisGaudreault.JG@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >

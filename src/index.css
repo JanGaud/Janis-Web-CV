@@ -25,6 +25,7 @@ sans-serif;
 @layer base {
     body {
         @apply font-nunito;
+        @apply bg-deep-purple;
     }
 
     li {
@@ -54,6 +55,8 @@ sans-serif;
 --amethyst: #9d4edd;
 }
 
+
+/* Cartes de projets */
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,3 +70,13 @@ sans-serif;
         hsla(266, 71%, 53%, 0.8)
     )!important;
  }
+
+
+ /* Effets scroll ghostFx */
+
+.ghostFx>* {
+    opacity: 0;
+    transform: translateY(100%);
+    /* Initially place them to the right */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}

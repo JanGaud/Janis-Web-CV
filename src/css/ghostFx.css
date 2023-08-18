@@ -1,0 +1,6 @@
+.ghostFx>* {
+    opacity: 0;
+    /* initially the elements are invisible */
+    transition: opacity 0.5s ease-out;
+    /* smooth transition effect */
+}

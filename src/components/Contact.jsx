@@ -1,10 +1,11 @@
 import React from "react";
 
+
 const Contact = () => {
   return (
     <section
       name="contact"
-      className="w-full h-screen bg-[--russian-violet] flex justify-center p-4"
+      className="ghostFx w-full h-screen flex justify-center p-4"
     >
       <form
         action="https://getform.io/f/322d68c2-8c0c-41c4-abcb-aa3a3db05b72"

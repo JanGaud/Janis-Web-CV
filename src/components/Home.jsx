@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from "react-scroll";
 
 
+
 const Home = () => {
   return (
-    <section name="home" className="w-full h-screen bg-[--russian-violet]">
+    <section
+      name="home"
+      className="ghostFx w-full h-screen"
+    >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[--orange-peel]">Bonjour, mon nom est</p>
@@ -23,12 +27,7 @@ const Home = () => {
         </p>
         <div>
           <button className="text-gray-300 border-2 p-3 my-2 hover:border-[--amethyst] duration-300">
-            <Link
-              activeClass="active"
-              to="work"
-              smooth={true}
-              duration={500}
-            >
+            <Link activeClass="active" to="work" smooth={true} duration={500}>
               Voir mes projets
             </Link>
           </button>

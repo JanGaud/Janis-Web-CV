@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       name="about"
-      className="w-full h-screen bg-[--russian-violet] text-[#e7e7e7]"
+      className="ghostFx w-full h-screen text-[#e7e7e7]"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">

@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        'deep-purple': '#0f001d',
+      },
       fontFamily: {
         'nunito': ['Nunito Sans', 'sans-serif'],
         'archivo': ['Archivo Narrow', 'sans-serif'],
