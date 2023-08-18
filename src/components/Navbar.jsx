@@ -15,7 +15,7 @@ import { Link } from "react-scroll";
 import TypingAnimation from "../script/TypeAnimation";
 
 const elements = [
-  { toRotate: '["Développeuse Web", "Programmeuse Full-Stack"]', period: "4000" },
+  { toRotate: '["Développeuse Web", "Programmeuse Full-Stack"]', period: "4500" },
   // ... add more as needed
 ];
 
@@ -24,11 +24,11 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <section className="z-10 fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300">
-        <div className="flex items-center">
-          <img src={Logo} alt="JG Logo" className="w-16 mr-5" />
-          <TypingAnimation elements={elements} />
-        </div>
+    <section className="z-10 fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 bg-[#0f001dc2]">
+      <div className="flex items-center">
+        <img src={Logo} alt="JG Logo" className="w-16 mr-5" />
+        <TypingAnimation elements={elements} />
+      </div>
 
       {/* menu */}
       <ul className="hidden md:flex">
