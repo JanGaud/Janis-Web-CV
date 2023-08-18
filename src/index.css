@@ -55,17 +55,6 @@ sans-serif;
 --amethyst: #9d4edd;
 }
 
-/* Effet de parralax */
-
-.parallax {
-    background-image: url("./assets/parralaxImg.png");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Cartes de projets */
 .content-div {
     background-repeat: no-repeat;
@@ -81,12 +70,30 @@ sans-serif;
     )!important;
  }
 
+/* Effet de parralax */
+
+.parallax {
+    background-image: url("./assets/parralaxImg.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
  /* Effets scroll ghostFx */
 
-.ghostFx>* {
+.ghostFx>div {
     opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    /* hide it */
+    overflow: hidden;
+    /* avoid contents from spilling out */
     transform: translateY(100%);
-    /* Initially place them to the right */
-    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+    transition:
+        opacity 1.2s ease-out,
+        transform 1.2s ease-out,
+        visibility 1.2s ease-out,
+        max-height 1.2s ease-out;
 }
