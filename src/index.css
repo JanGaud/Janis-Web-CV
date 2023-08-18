@@ -83,17 +83,8 @@ sans-serif;
 
  /* Effets scroll ghostFx */
 
-.ghostFx>div {
-    opacity: 0;
-    visibility: hidden;
-    max-height: 0;
-    /* hide it */
-    overflow: hidden;
-    /* avoid contents from spilling out */
-    transform: translateY(100%);
-    transition:
-        opacity 1.2s ease-out,
-        transform 1.2s ease-out,
-        visibility 1.2s ease-out,
-        max-height 1.2s ease-out;
-}
+ .ghostFx > div{
+     opacity: 0;
+     transform: translateX(100%);
+     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+ }
