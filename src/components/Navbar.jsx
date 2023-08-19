@@ -4,27 +4,47 @@ import {
   FaGithub,
   FaLinkedin,
   FaFacebook,
-} 
-from "react-icons/fa";
+} from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/JGLogo.png";
 import CV from "../assets/cv/CV-Janis-Gaudreault.pdf";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import TypingAnimation from "../script/TypeAnimation";
 
 const elements = [
-  { toRotate: '["Développeuse Web", "Programmeuse Full-Stack"]', period: "4500" },
-  // ... add more as needed
+  {
+    toRotate: '["Développeuse Web", "Programmeuse Full-Stack"]',
+    period: "4500",
+  },
 ];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [navbarColor, setNavbarColor] = useState("transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollPos = window.scrollY;
+      let opacity = scrollPos / 700; // Adjust 600 to control the fade speed
+      opacity = opacity > 1 ? 1 : opacity; // Ensure opacity stays between 0 and 1
+      setNavbarColor(`rgba(15, 0, 29, ${opacity})`); // #0f001d in rgba
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="z-10 fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 bg-[#0f001dc2]">
+    <section
+      className="z-10 fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 navbar transition duration-500"
+      style={{ backgroundColor: navbarColor }}
+    >
       <div className="flex items-center">
         <img src={Logo} alt="JG Logo" className="w-16 mr-5" />
         <TypingAnimation elements={elements} />
