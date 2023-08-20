@@ -1,5 +1,7 @@
 import React from "react";
-import WorkImg from "../assets/projects/workImg.jpeg";
+import VinStock from "../assets/projects/vinstock/VinStock.png";
+import Chico from "../assets/projects/chico/Chico.jpg";
+import Maisonneuve from "../assets/projects/maisonneuve/Maisonneuve.png";
 
 
 const Work = () => {
@@ -18,7 +20,70 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-20">
           {/* Card */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${VinStock})` }}
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-center text-white tracking-wider">
+                  Laravel et Php
+                </span>
+                <small>Pour téléphone mobile</small>
+              </div>
+              <div className="pt-8 text-center">
+                <a href="https://www.vinstock.ca/login" target="_blank">
+                  <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
+                    Voir plus!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Card */}
+          <div
+            style={{ backgroundImage: `url(${Chico})` }}
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-center text-white tracking-wider">
+                  C# avec ASP.NET
+                </span>
+                <small>Interface admin</small>
+              </div>
+              <div className="pt-8 text-center">
+                <a href="#">
+                  <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
+                    Voir plus!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Card */}
+          <div
+            style={{ backgroundImage: `url(${Maisonneuve})` }}
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+            <div className="opacity-0 group-hover:opacity-100">
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-center text-white tracking-wider">
+                  Php avec Laravel
+                </span>
+                <small>Travail pratique de réseau sociale d'école</small>
+              </div>
+              <div className="pt-8 text-center">
+                <a href="#">
+                  <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
+                    Voir plus!
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Card */}
+          <div
+            style={{ backgroundImage: `url(${VinStock})` }}
             className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -36,7 +101,7 @@ const Work = () => {
           </div>
           {/* Card */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${VinStock})` }}
             className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -54,61 +119,7 @@ const Work = () => {
           </div>
           {/* Card */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="#">
-                  <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
-                    Voir plus!
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* Card */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="#">
-                  <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
-                    Voir plus!
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* Card */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="#">
-                  <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
-                    Voir plus!
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* Card */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${VinStock})` }}
             className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             <div className="opacity-0 group-hover:opacity-100">

@@ -54,6 +54,12 @@ sans-serif;
 --amethyst: #9d4edd;
 }
 
+body,
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Cartes de projets */
 .content-div {
     background-repeat: no-repeat;
@@ -112,8 +118,36 @@ sans-serif;
     }
 }
 
-/* Nav bg Change Animation */
 
-.navbar {
-    transition: background-color 0.5s ease;
+/* scrollbar */
+
+/* For Webkit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 2px;
+    /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--russian-violet);
+    /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+    /* color of the scroll thumb */
+    border-radius: 4px;
+    /* roundness of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--russian-violet);
+    /* color of the scroll thumb on hover */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    /* or "auto" or "none" */
+    scrollbar-color: --russian-violet #f1f1f1;
+    /* thumb and track color */
 }
