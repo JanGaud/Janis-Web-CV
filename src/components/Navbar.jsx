@@ -56,13 +56,11 @@ const Navbar = () => {
             Acceuil
           </Link>
         </li>
-        <li>
           <li>
             <Link activeClass="active" to="about" smooth={true} duration={500}>
               À propos
             </Link>
           </li>
-        </li>
         <li>
           <Link activeClass="active" to="skills" smooth={true} duration={500}>
             Compétences

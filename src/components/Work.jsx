@@ -3,7 +3,6 @@ import VinStock from "../assets/projects/vinstock/VinStock.png";
 import Chico from "../assets/projects/chico/Chico.jpg";
 import Maisonneuve from "../assets/projects/maisonneuve/Maisonneuve.png";
 
-
 const Work = () => {
   return (
     <section name="work" className="ghostFx w-full min-h-screen text-[#e7e7e7]">
@@ -33,7 +32,7 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="https://www.vinstock.ca/login" target="_blank">
                   <button className="text-gray-300 border-2 p-3 hover:border-[--amethyst] duration-300">
-                    Voir plus!
+                    Visiter le site!
                   </button>
                 </a>
               </div>
@@ -63,7 +62,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${Maisonneuve})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div p-2"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <div className="flex flex-col">
@@ -84,7 +83,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${VinStock})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div p-2"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -102,7 +101,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${VinStock})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div p-2"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
@@ -120,7 +119,7 @@ const Work = () => {
           {/* Card */}
           <div
             style={{ backgroundImage: `url(${VinStock})` }}
-            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="z-10 group container rounded-md flex justify-center items-center mx-auto content-div p-2"
           >
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
