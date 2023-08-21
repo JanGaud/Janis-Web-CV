@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { FaArrowLeft } from "react-icons/fa";
 import ImageModal from "../Tools/ImageModal";
 
@@ -20,17 +21,38 @@ const ChicoDetails = () => {
     alt: "",
   });
 
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+  const [navbarColor, setNavbarColor] = useState("transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollPos = window.scrollY;
+      let opacity = scrollPos / 700; // Adjust 600 to control the fade speed
+      opacity = opacity > 1 ? 1 : opacity; // Ensure opacity stays between 0 and 1
+      setNavbarColor(`rgba(15, 0, 29, ${opacity})`); // #0f001d in rgba
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section name="Chico" className="w-full min-h-screen text-[#e7e7e7]">
-      <div className="">
+      <div
+        className="z-10 fixed w-full h-[80px] flex justify-around items-center px-4"
+        style={{ backgroundColor: navbarColor }}
+      >
         <a
           href="/"
-          className="p-4 absolute top-0 left-0 flex gap-4 items-center text-center text-md font-semibold text--[#e7e7e7] outline-none md:px-8 md:py-3 md:text-base hover:text-[--amethyst] duration-300"
+          className="p-4 flex gap-6 items-center text-md font-semibold text--[#e7e7e7] outline-none md:px-8 md:py-3 md:text-base hover:text-[--amethyst] duration-300"
         >
-          <FaArrowLeft className="text-[20px]" />
-          <small>Retour</small>
+          <FaArrowLeft className="text-[30px]" />
+          <small className="text-[20px]">Retour</small>
         </a>
-        <div></div>
       </div>
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div class="py-6 sm:py-8 lg:py-12 pt-10">
