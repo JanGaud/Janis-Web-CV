@@ -52,7 +52,7 @@ const Footer = () => {
             <li className="hover:scale-110 duration-500">
               <a
                 className="flex justify-between items-center w-full text-[#d44638]"
-                href="https://github.com/JanGaud"
+                href="mailto:JanisGaudreault.JG@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
