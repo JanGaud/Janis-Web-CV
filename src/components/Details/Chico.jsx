@@ -7,7 +7,6 @@ import Notification from "../../assets/projects/chico/Notification.png";
 import Stats from "../../assets/projects/chico/Stats.png";
 import Swipe from "../../assets/projects/chico/Swipe.png";
 import InfosSondage from "../../assets/projects/chico/InfosSondage.png";
-import Note from "../../assets/projects/chico/Note.png";
 import HistoriqueNote from "../../assets/projects/chico/HistoriqueNote.png";
 import DtailsReponses from "../../assets/projects/chico/DtailsReponses.png";
 import Datatable from "../../assets/projects/chico/Datatable.png";
@@ -55,12 +54,12 @@ const ChicoDetails = () => {
         </a>
       </div>
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div class="py-6 sm:py-8 lg:py-12 pt-10">
+        <div class="py-4 sm:py-8 lg:py-20 pt-10">
           <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-            <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+            <div class="flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
               <div className="pb-8">
                 <h1 className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
-                  Chico
+                  Franchises Chico
                 </h1>
                 <p className="py-10">
                   // Durant mon stage, j'ai travaillé sur un projet intitullé
@@ -206,7 +205,7 @@ const ChicoDetails = () => {
               </div>
             </div>
 
-            {/* New grid start */}
+            {/* New grid start 3 */}
             <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-1 gap-4">
               <div className="md:col-span-2">
                 {/* Text */}
@@ -247,6 +246,118 @@ const ChicoDetails = () => {
                     }
                   />
                 </a>
+              </div>
+            </div>
+
+            {/* grid start 4 */}
+
+            <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-6 xl:gap-8">
+              {/*  image - start  */}
+              <div class="group relative flex h-48 md:h-80 items-end overflow-hidden rounded-lg">
+                <img
+                  src={HistoriqueNote}
+                  loading="lazy"
+                  alt="HistoriqueNote"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  onClick={() =>
+                    setModalInfo({
+                      isOpen: true,
+                      src: HistoriqueNote,
+                      alt: "HistoriqueNote",
+                    })
+                  }
+                />
+              </div>
+              {/*  image - end  */}
+
+              {/* Text start */}
+              <div class="grid sm:col-span-1 gap-4 md:gap-6 xl:gap-8">
+                <p className="text-s">
+                  L'interface permet également de consulter l'historique des
+                  résolutions d'alertes. Dans cette section, les utilisateurs
+                  ont la possibilité de visualiser les notes de résolution
+                  associées à chaque alerte passée. Les alertes dans
+                  l'historique sont triées en fonction de la résolution la plus
+                  récente, ce qui permet d'avoir une vue claire des actions
+                  prises pour chaque alerte précédente.
+                  <br /> <br />
+                  Contrairement à la page principale des alertes, où les alertes
+                  sont classées en fonction du nombre de jours en alerte pour
+                  prioriser celles qui nécessitent une réponse immédiate,
+                  l'historique met en avant le suivi des actions prises pour
+                  résoudre les alertes passées. De plus, pour faciliter la
+                  recherche et la gestion, j'ai intégré l'utilisation de{" "}
+                  <a
+                    className="hover:text-[--amethyst] duration-300"
+                    href="https://datatables.net/manual/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    DataTables
+                  </a>
+                  , offrant ainsi la possibilité d'appliquer différents filtres
+                  et options pour une meilleure expérience utilisateur.
+                </p>
+              </div>
+
+              {/*  image - start  */}
+              <a
+                href="#"
+                className="group relative flex h-48 items-end overflow-hidden rounded-lg md:col-span-full md:h-80"
+              >
+                <img
+                  src={Datatable}
+                  loading="lazy"
+                  alt="Datatable"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
+                  onClick={() =>
+                    setModalInfo({
+                      isOpen: true,
+                      src: Datatable,
+                      alt: "Datatable",
+                    })
+                  }
+                />
+              </a>
+
+              {/*  image - end  */}
+            </div>
+
+            {/* Last grid */}
+            <div className="mt-20 grid grid-cols-1 grid-rows-1 gap-4">
+              <div>
+                {/* Text start */}
+                <div class="grid sm:col-span-1">
+                  <p className="text-s">
+                    Pendant mon stage, j'ai été confronté à de nouvelles
+                    technologies que je n'avais jamais rencontrées à l'école.
+                    Cependant, une fois que l'on a acquis une solide
+                    compréhension des bases de la programmation, du modèle MVC
+                    et des requêtes SQL, par exemple, il devient plus aisé de
+                    s'adapter. J'ai fait un usage étendu de jQuery et j'ai eu à
+                    réaliser des requêtes AJAX pour gérer les interactions
+                    dynamiques. En parallèle, j'ai utilisé SQL Server Management
+                    Studio (SSMS) comme interface pour la gestion de la base de
+                    données. 
+                    <br /><br />
+                    Mon rôle durant ce stage a également inclus la
+                    résolution de plusieurs problèmes. Par exemple, j'ai
+                    identifié qu'il était possible pour les clients de soumettre
+                    le même formulaire à plusieurs reprises, ce qui aurait pu
+                    altérer les données statistiques des sondages. Pour pallier
+                    cela, j'ai implémenté des mesures en bloquant l'adresse IP
+                    pendant 24 heures après un certain nombre de soumissions et
+                    en empêchant toute nouvelle soumission une fois le
+                    formulaire envoyé une première fois. Cette initiative visait
+                    à garantir l'intégrité des données collectées. 
+                    <br /><br />
+                    L'expérience
+                    m'a permis d'élargir mes compétences et de relever des défis
+                    concrets dans le développement d'applications interactives,
+                    tout en améliorant la qualité des fonctionnalités et en
+                    assurant l'intégrité des données.
+                  </p>
+                </div>
               </div>
             </div>
 
