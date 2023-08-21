@@ -68,7 +68,7 @@ const Work = () => {
             <div className="opacity-0 group-hover:opacity-100">
               <div className="flex flex-col">
                 <span className="text-2xl font-bold text-center text-white tracking-wider">
-                  Php avec Laravel
+                  Laravel et Php
                 </span>
                 <small>Travail pratique de réseau sociale d'école</small>
               </div>
