@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import BackNav from "./components/BackNav";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import GhostFx from './script/GhostFx';
@@ -27,14 +28,27 @@ function RoutesWithNavbar() {
       {location.pathname !== "/Chico" && <Navbar />}
       <GhostFx />
       <Routes>
-        <Route path="/" element={<>
-          <Home />
-          <About />
-          <Skills />
-          <Work />
-          <Contact />
-        </>} />
-        <Route path="/Chico" element={<ChicoDetails />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <About />
+              <Skills />
+              <Work />
+              <Contact />
+            </>
+          }
+        />
+        <Route
+          path="/Chico"
+          element={
+            <>
+              <BackNav />
+              <ChicoDetails />
+            </>
+          }
+        />
       </Routes>
     </div>
   );

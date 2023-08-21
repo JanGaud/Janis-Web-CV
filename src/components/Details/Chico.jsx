@@ -40,19 +40,7 @@ const ChicoDetails = () => {
   }, []);
 
   return (
-    <section name="Chico" className="w-full min-h-screen text-[#e7e7e7]">
-      <div
-        className="z-10 fixed w-full h-[80px] flex justify-around items-center px-4"
-        style={{ backgroundColor: navbarColor }}
-      >
-        <a
-          href="/"
-          className="p-4 flex gap-6 items-center text-md font-semibold text--[#e7e7e7] outline-none md:px-8 md:py-3 md:text-base hover:text-[--amethyst] duration-300"
-        >
-          <FaArrowLeft className="text-[30px]" />
-          <small className="text-[20px]">Retour</small>
-        </a>
-      </div>
+    <section name="Chico" className="w-full min-h-screen pt-6 text-[#e7e7e7]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div class="py-4 sm:py-8 lg:py-20 pt-10">
           <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
