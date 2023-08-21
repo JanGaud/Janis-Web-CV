@@ -14,7 +14,7 @@ import TypingAnimation from "../script/TypeAnimation";
 
 const elements = [
   {
-    toRotate: '["Développeuse Web", "Programmeuse Full-Stack"]',
+    toRotate: '["Développeuse Web", "Programmeuse Full Stack"]',
     period: "4500",
   },
 ];
