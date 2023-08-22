@@ -17,7 +17,7 @@ const Home = () => {
           Je suis une développeuse Web Full Stack.
         </h2>
         <p className="text-[#e7e7e7] py-4 max-w-[800px]">
-          "Bonjour, je suis Janis Gaudreault, développeuse full stack
+          Bonjour, je suis Janis Gaudreault, développeuse full stack
           spécialisée dans le web. Mon expertise englobe le développement
           complet d'applications web, du front-end au back-end. Passionnée par
           le mariage entre le code et le design, j'apprécie particulièrement
