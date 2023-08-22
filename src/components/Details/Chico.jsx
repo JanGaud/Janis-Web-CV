@@ -46,7 +46,7 @@ const ChicoDetails = () => {
           <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
             <div class="flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
               <div className="pb-8">
-                <h1 className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
+                <h1 className="tracking-wider text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
                   Franchises Chico
                 </h1>
                 <p className="py-10">
@@ -326,24 +326,25 @@ const ChicoDetails = () => {
                     réaliser des requêtes AJAX pour gérer les interactions
                     dynamiques. En parallèle, j'ai utilisé SQL Server Management
                     Studio (SSMS) comme interface pour la gestion de la base de
-                    données. 
-                    <br /><br />
-                    Mon rôle durant ce stage a également inclus la
-                    résolution de plusieurs problèmes. Par exemple, j'ai
-                    identifié qu'il était possible pour les clients de soumettre
-                    le même formulaire à plusieurs reprises, ce qui aurait pu
-                    altérer les données statistiques des sondages. Pour pallier
-                    cela, j'ai implémenté des mesures en bloquant l'adresse IP
-                    pendant 24 heures après un certain nombre de soumissions et
-                    en empêchant toute nouvelle soumission une fois le
-                    formulaire envoyé une première fois. Cette initiative visait
-                    à garantir l'intégrité des données collectées. 
-                    <br /><br />
-                    L'expérience
-                    m'a permis d'élargir mes compétences et de relever des défis
-                    concrets dans le développement d'applications interactives,
-                    tout en améliorant la qualité des fonctionnalités et en
-                    assurant l'intégrité des données.
+                    données.
+                    <br />
+                    <br />
+                    Mon rôle durant ce stage a également inclus la résolution de
+                    plusieurs problèmes. Par exemple, j'ai identifié qu'il était
+                    possible pour les clients de soumettre le même formulaire à
+                    plusieurs reprises, ce qui aurait pu altérer les données
+                    statistiques des sondages. Pour pallier cela, j'ai
+                    implémenté des mesures en bloquant l'adresse IP pendant 24
+                    heures après un certain nombre de soumissions et en
+                    empêchant toute nouvelle soumission une fois le formulaire
+                    envoyé une première fois. Cette initiative visait à garantir
+                    l'intégrité des données collectées.
+                    <br />
+                    <br />
+                    L'expérience m'a permis d'élargir mes compétences et de
+                    relever des défis concrets dans le développement
+                    d'applications interactives, tout en améliorant la qualité
+                    des fonctionnalités et en assurant l'intégrité des données.
                   </p>
                 </div>
               </div>

@@ -17,7 +17,7 @@ const Skills = () => {
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <h1 className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
+          <h1 className="tracking-wider text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
             Compétences
           </h1>
           <p className="py-10">

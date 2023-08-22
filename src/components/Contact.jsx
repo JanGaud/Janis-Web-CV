@@ -14,7 +14,7 @@ const Contact = () => {
           className="flex flex-col max-w-[600px] w-full text-[--russian-violet]"
         >
           <div className="pb-8 text-[#e7e7e7]">
-            <h1 className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
+            <h1 className="tracking-wider text-4xl sm:text-7xl font-bold inline border-b-4 border-[#ff840092]">
               Contactez-moi
             </h1>
             <p className="py-10 mb-[-30px]">
