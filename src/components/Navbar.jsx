@@ -53,7 +53,7 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li>
           <Link activeClass="active" to="home" smooth={true} duration={500}>
-            Acceuil
+            Accueil
           </Link>
         </li>
           <li>
@@ -103,7 +103,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Acceuil
+            Accueil
           </Link>
         </li>
         <li className="py-6 text-4xl">
