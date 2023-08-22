@@ -21,7 +21,7 @@ const Skills = () => {
             Compétences
           </h1>
           <p className="py-10">
-            // Voici quelques technologies avec lesquelles je travail.
+            // Voici quelques technologies avec lesquelles je travaille.
           </p>
         </div>
 

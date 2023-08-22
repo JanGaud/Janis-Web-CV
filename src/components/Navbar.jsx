@@ -73,7 +73,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link activeClass="active" to="contact" smooth={true} duration={500}>
-            Contacte
+            Contact
           </Link>
         </li>
       </ul>
@@ -147,7 +147,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Contacte
+            Contact
           </Link>
         </li>
       </ul>
