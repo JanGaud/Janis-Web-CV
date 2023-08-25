@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import VinStock from "../assets/projects/vinstock/VinStock.png";
-import Chico from "../assets/projects/chico/Chico.jpg";
+import Chico from "../assets/projects/chico/Chico.png";
 import Maisonneuve from "../assets/projects/maisonneuve/Maisonneuve.png";
 import Unavailable from "../assets/unavailable.png";
 
