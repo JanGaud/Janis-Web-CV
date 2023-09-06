@@ -4,6 +4,9 @@ const GhostEffect = () => {
   useEffect(() => {
     const handleScroll = () => {
       document.querySelectorAll(".ghostFx").forEach((container) => {
+        // Skip this section if it's already been activated.
+        if (container.dataset.activated) return;
+
         const { top, bottom } = container.getBoundingClientRect();
 
         // Check if the container is at least halfway in the viewport
@@ -11,14 +14,12 @@ const GhostEffect = () => {
           top + container.offsetHeight / 2 < window.innerHeight &&
           bottom - container.offsetHeight / 2 > 0
         ) {
+          // Mark this section as activated.
+          container.dataset.activated = "true";
+
           Array.from(container.children).forEach((child) => {
             child.style.opacity = "1";
             child.style.transform = "translateX(0%)"; // Place them in their original position
-          });
-        } else {
-          Array.from(container.children).forEach((child) => {
-            child.style.opacity = "0";
-            child.style.transform = "translateX(-100%)"; // Slide them out to the left
           });
         }
       });
